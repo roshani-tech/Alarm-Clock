@@ -1,0 +1,65 @@
+body,
+.container,
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+  background-color: darkslategrey;
+}
+
+.image {
+  height: 400px;
+  width: 440px;
+  border-radius: 10px;
+}
+
+.container {
+  box-sizing: border-box;
+  background-color: darkcyan;
+  width: 640px;
+  height: 660px;
+  flex-direction: column;
+  border-radius: 20px;
+}
+button {
+  width: 84%;
+  outline: 0;
+  border: 0;
+  padding: 20px, 0;
+  height: 30px;
+  background-color: burlywood;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.container .content {
+  justify-content: space-between;
+  width: 90%;
+}
+
+.container .content.disable {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.content .controls {
+  border: 1px solid black;
+  width: calc(100% / 2 - 5px);
+  padding: 5px;
+  border-radius: 8px;
+  margin: 20px;
+  background-color: white;
+}
+
+.content .controls select {
+  outline: 0;
+  border: 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+}
